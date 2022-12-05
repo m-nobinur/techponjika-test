@@ -94,8 +94,8 @@ module.exports = withContentlayer(
     },
     env: {
       BACKEND_URL: '/techponjika-test',
-      PUBLIC_IMG: '/techponjika-teststatic/images',
-      FAVICON: '/techponjika-teststatic/favicons/'
+      PUBLIC_IMG: '/techponjika-teststatic',
+      FAVICON: '/techponjika-teststatic/static/favicons/'
     },
     images: {
       loader: 'akamai',
