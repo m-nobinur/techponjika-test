@@ -94,7 +94,7 @@ module.exports = withContentlayer(
       loader: 'akamai',
       path: '/',
     },
-    basePath: '/tech-ponjika-prod',
-    assetPrefix: '/tech-ponjika-prod/',
+    basePath: '/techponjika-test',
+    assetPrefix: '/techponjika-test/',
   })
 )
