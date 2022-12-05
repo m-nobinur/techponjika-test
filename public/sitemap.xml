@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>#/blog/code-sample</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/deriving-ols-estimator</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/github-markdown-guide</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/guide-to-using-images-in-nextjs</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/introducing-tailwind-nextjs-starter-blog</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/my-fancy-title</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/new-features-in-v1</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/pictures-of-canada</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/the-time-machine</loc>
+  </url>
+
+  <url>
+    <loc>#/blog/nested-route/introducing-multi-part-posts-with-nested-routing</loc>
+  </url>
+</urlset>
