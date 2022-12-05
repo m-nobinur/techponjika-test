@@ -101,7 +101,7 @@ module.exports = withContentlayer(
   }),
   withOptimizedImages([
     {
-      imagesPublicPath: '/wallisconsultancy/_next/static/images/',
+      imagesPublicPath: '/techponjika-test/_next/static/images/',
     },
     {
       basePath: '/techponjika-test',
