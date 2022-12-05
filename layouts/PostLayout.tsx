@@ -74,7 +74,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
                         <Image
-                          src={author.avatar}
+                        src={`${process.env.PUBLIC_IMG}${author.avatar}`}
                           width="38px"
                           height="38px"
                           alt="avatar"

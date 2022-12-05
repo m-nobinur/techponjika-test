@@ -24,7 +24,7 @@ export default function AuthorLayout({ children, content }: Props) {
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8">
             <Image
-              src={avatar}
+              src={`${process.env.PUBLIC_IMG}${avatar}`}
               alt="avatar"
               width="192px"
               height="192px"
