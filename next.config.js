@@ -99,20 +99,14 @@ module.exports = withContentlayer(
   })
 )
 
-const withPlugins = require('next-compose-plugins')
-const optimizedImages = require('next-optimized-images')
+const withOptimizedImages = require('next-optimized-images')
 
-module.exports = withPlugins([
+module.exports = withOptimizedImages([
   [
     optimizedImages,
     {
       mozjpeg: {
         quality: 80,
-      },
-      pngquant: {
-        speed: 3,
-        strip: true,
-        verbose: true,
       },
       imagesPublicPath: '/techponjika-test/_next/static/images/',
     },
