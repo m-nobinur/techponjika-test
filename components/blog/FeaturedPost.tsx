@@ -17,7 +17,7 @@ const FeaturedPost = (props: Post) => {
                 <div className="relative h-[245px] md:h-[420px]" key={i}>
                   <Image
                     alt={props.title}
-                    src={`${process.env.FAVICON}${img}`}
+                    src={`${process.env.PUBLIC_IMG}${img}`}
                     layout="fill"
                     className="rounded-xl"
                   />

@@ -18,7 +18,7 @@ const Post = (props: Post) => {
                 <div className="relative h-[210px] md:h-[245px] md:w-11/12" key={i}>
                   <Image
                     alt={props.title}
-                    src={`${process.env.FAVICON}${img}`}
+                    src={`${process.env.PUBLIC_IMG}${img}`}
                     layout="fill"
                     className="rounded-[10px]"
                   />
