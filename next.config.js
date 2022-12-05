@@ -1,4 +1,5 @@
 const { withContentlayer } = require('next-contentlayer')
+const withOptimizedImages = require('next-optimized-images')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -90,29 +91,21 @@ module.exports = withContentlayer(
 
       return config
     },
+
     images: {
       loader: 'akamai',
       path: '/',
     },
     basePath: '/techponjika-test',
     assetPrefix: '/techponjika-test/',
-  })
-)
-
-const withOptimizedImages = require('next-optimized-images')
-
-module.exports = withOptimizedImages([
-  [
-    optimizedImages,
+  }),
+  withOptimizedImages([
     {
-      mozjpeg: {
-        quality: 80,
-      },
-      imagesPublicPath: '/techponjika-test/_next/static/images/',
+      imagesPublicPath: '/wallisconsultancy/_next/static/images/',
     },
-  ],
-  {
-    basePath: '/techponjika-test',
-    assetPrefix: '/techponjika-test/',
-  },
-])
+    {
+      basePath: '/techponjika-test',
+      assetPrefix: '/techponjika-test/',
+    },
+  ])
+)
