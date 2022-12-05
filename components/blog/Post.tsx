@@ -16,7 +16,12 @@ const Post = (props: Post) => {
             props.images?.map((img, i) =>
               img.length && i == 0 ? (
                 <div className="relative h-[210px] md:h-[245px] md:w-11/12" key={i}>
-                  <Image alt={props.title} src={img} layout="fill" className="rounded-[10px]" />
+                  <Image
+                    alt={props.title}
+                    src={`${process.env.FAVICON}${img}`}
+                    layout="fill"
+                    className="rounded-[10px]"
+                  />
                 </div>
               ) : (
                 ''

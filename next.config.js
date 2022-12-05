@@ -59,6 +59,7 @@ const securityHeaders = [
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = withContentlayer(
+  
   withBundleAnalyzer({
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
@@ -91,7 +92,11 @@ module.exports = withContentlayer(
 
       return config
     },
-
+    env: {
+      BACKEND_URL: '/techponjika-test',
+      PUBLIC_IMG: '/techponjika-test/_next/static/images/',
+      FAVICON: '/techponjika-test/_next/static/favicons/'
+    },
     images: {
       loader: 'akamai',
       path: '/',
@@ -107,5 +112,6 @@ module.exports = withContentlayer(
       basePath: '/techponjika-test',
       assetPrefix: '/techponjika-test/',
     },
+    
   ])
 )
